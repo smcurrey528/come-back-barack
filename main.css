@@ -1,3 +1,4 @@
+/*this is the CSS page for the landing page*/
 body {
 font-family: 'Luckiest Guy', cursive;
  background-color: lightblue;
@@ -49,6 +50,10 @@ p {
 }
 h1 {
   text-align: center;
+
+}
+a {
+  color: inherit;
 }
 
 .outline {
@@ -84,9 +89,22 @@ footer {
   text-align: center;
 }
 
+/*.hat {
+  height: 170px;
+  width: 170px;
+  border-radius: 50px;
+  background-image: url('https://www.drieddecor.com/images/large/products/ginormous-tumbleweed_LRG.jpg');
+  background-size: cover;
+  background-position: left;
+  animation: roll .99s ease-in-out infinite alternate;
+  position: absolute;
+  bottom: 250px;
+
+}*/
+/*found the tranistion on http://jsfiddle.net/fengelz/yPnuN/*/
 @keyframes move {
   0% {
-    background-position:1242px
+    background-position:1200px
      }
   100% {
     background-position:0
