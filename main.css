@@ -3,11 +3,12 @@ font-family: 'Luckiest Guy', cursive;
  background-color: lightblue;
   background-image: url('https://i.imgur.com/LIOBDHj.png');
     background-size: cover;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
   background-color: #4abcff;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 100px;
 
 }
@@ -35,11 +36,16 @@ nav {
 }
 
 p {
-  font-size: 24px;
+  font-size: 23px;
 }
 
 .header {
   text-align: center;
+}
+
+.header, .play {
+   /*font-family: 'Luckiest Guy', cursive;*/
+   font-family: 'Poppins', sans-serif;
 }
 h1 {
   text-align: center;
@@ -52,8 +58,9 @@ h1 {
 .scuba-photo {
   display: flex;
   justify-content: center;
-  border: 5px solid;
-  background-color: black;
+  border: 10px solid #4abcff;
+  background-color: #4abcff;
+
 }
 .background {
  /* background: url(https://i.imgsafe.org/72/72dd61f655.png);*/
@@ -84,4 +91,15 @@ footer {
   100% {
     background-position:0
   }
+}
+
+.obama {
+  position: absolute;
+  background-image: url(Obama.png);
+/*  background-position: -100px -160px;*/
+  width: 100px;
+  height: 200px;
+/*  transition: top 2s, left 2s;*/
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
 }
