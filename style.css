@@ -1,0 +1,47 @@
+/*this is the CSS styling page for the Game*/
+body, html {
+  background-image: url(https://s3.envato.com/files/170596024/City_Background_Ny_4267x2133.jpg);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+}
+
+/*CSS to move audio to the bottom left section of page*/
+audio {
+  position: absolute;
+  bottom: 0;
+}
+
+/*.hat {
+  height: 170px;
+  width: 170px;
+  border-radius: 50px;
+  background-image: url('https://www.drieddecor.com/images/large/products/ginormous-tumbleweed_LRG.jpg');
+  background-size: cover;
+  background-position: left;
+  animation: roll .99s ease-in-out infinite alternate;
+  position: absolute;
+  bottom: 250px;*/
+
+  .obama {
+  position: absolute;
+  background-image: url(images/obama-sprite2.png);
+  width: 140px;
+  height: 170px;
+ /* transition: top 2s, left 2s;
+  transition-timing-function: linear;*/
+ /* background-repeat: no-repeat;*/
+  background-position: -240px 170px;
+  bottom: 18px;
+  left: 400px;
+}
+
+.obama.left {
+
+}
+
+

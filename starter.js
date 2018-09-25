@@ -8,13 +8,13 @@
 //Questions about local storage, collecting the users' name
 window.onload = function () {
   const body = document.body;
- //creating a div with a class ".obama" to add Barack to the screen
- function makeObamaGreatAgain () {
-  const div =document.createElement('div')
-
-  div.classList.add('obama')
-  body.appendChild(div);
-
+  console.log(body)
+ // //creating a div with a class ".obama" to add Barack to the screen
+function createObama() {
+let obama = document.createElement('div');
+obama.classList.add('obama');
+body.appendChild(obama);
+return obama
  }
-// makeObamaGreatAgain();
+createObama();
  };

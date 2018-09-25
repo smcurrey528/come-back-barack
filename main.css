@@ -89,16 +89,6 @@ footer {
   text-align: center;
 }
 
-/*.hat {
-  height: 170px;
-  width: 170px;
-  border-radius: 50px;
-  background-image: url('https://www.drieddecor.com/images/large/products/ginormous-tumbleweed_LRG.jpg');
-  background-size: cover;
-  background-position: left;
-  animation: roll .99s ease-in-out infinite alternate;
-  position: absolute;
-  bottom: 250px;
 
 }*/
 /*found the tranistion on http://jsfiddle.net/fengelz/yPnuN/*/
@@ -111,13 +101,4 @@ footer {
   }
 }
 
-.obama {
-  position: absolute;
-  background-image: url(Obama.png);
-/*  background-position: -100px -160px;*/
-  width: 100px;
-  height: 200px;
-/*  transition: top 2s, left 2s;*/
-  transition-timing-function: linear;
-  background-repeat: no-repeat;
-}
+
