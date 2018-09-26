@@ -113,9 +113,62 @@ button {
   position: absolute;
   top: 0;
   right: 0;
-  border-radius: 30px;
-  margin-top: 5px;
+  border-radius: 30px;@media screen and (min-width:768px) {
+  .clearfix {
+    width: 768px;
+
+  }
+  nav {
+    background-color: #a4dae8;
+
+  }
+
+  ul{
+    text-align: center;
+    background-color: #a4dae8;
+    padding: 10px;
+
+  }
+  li {
+    background-color: #a4dae8;
+    width: 768px;
+    border: 1px;
+    display: inline;
+    flex-direction: row;
+  }
+
+  header {
+    background-color: #a4dae8;
+    width: 768px;
+    border: 1px solid white;
+    text-align: center;
+  }
+
 }
+
+@media screen and (max-width:600px) {
+  body, html {
+  background-image: url(https://s3.envato.com/files/170596024/City_Background_Ny_4267x2133.jpg);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  animation: move 20s linear infinite;
+
+
+}
+}
+@media screen and (min-width:1024px) {
+  .energy {
+    width: 100%;
+  }
+}
+
+
+
+
 
 
 
