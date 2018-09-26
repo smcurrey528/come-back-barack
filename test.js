@@ -66,13 +66,32 @@ createObama();
   //everything is working above, yasss queen
 
   //function to create an event listener when player clicks the snowflake
+// function energizeObama (event) {
+//   if (event.target.classList[0] === 'snowflake') {
+//     event.target.classList.add('energize')
+//   }
+//   // setTimeout(function ()
+//   //   let lightening = document.querySelector('')
+//   //   snowflake.remove();
+//   // }, 1000)
+// }
+//  body.addEventListener('click', energizeObama);
+
+
+body.addEventListener('click', energizeObama);
+
 function energizeObama (event) {
   if (event.target.classList[0] === 'snowflake') {
-    event.target.classList.add('energize')
+  event.target.classList.add('energize')
+
+ setTimeout(function() {
+    let bolt = document.querySelector('.energize')
+  bolt.remove();
+  }, 1000)
   }
 }
- body.addEventListener('click', energizeObama);
 
+energizeObama();
 // snowflake.addEventListener('click',function() {
 //   alert('energize!')
 //   // snowflake.classList.add('energize')
