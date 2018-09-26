@@ -6,12 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Come Back Barack</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="images/Obama.png" />
 </head>
 <body>
- <!--  https://css-tricks.com/html5-meter-element/ -->
- <meter min="0" low="10" optimum="50" high="90" max="100"></meter>
-  <audio id="myAudio" src= "audio/music.mp3" controls> </audio>
+ <!--  Found the progress bar here https://www.w3schools.com/tags/tag_progress.asp -->
+<div class='energy'> Obama's Energy Level
+  <progress value="50" max="100"> Obama's Energy</progress>
+<button onclick="restart()"; class="restart">Restart Game</button>
+  </div><audio id="myAudio" src= "audio/music.mp3" controls> </audio>
   <script src="test.js"></script>
 </body>
 </html>

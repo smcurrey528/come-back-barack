@@ -14,6 +14,7 @@ const body = document.body;
   let obama = document.createElement('div');
   let snowflake = document.createElement('div');
   let hat = document.createElement('div');
+  let endGame = false;
 //  // //creating a div with a class ".obama" to add Barack to the screen
 
   function createObama() {
@@ -66,42 +67,47 @@ createObama();
   //everything is working above, yasss queen
 
   //function to create an event listener when player clicks the snowflake
-// function energizeObama (event) {
-//   if (event.target.classList[0] === 'snowflake') {
-//     event.target.classList.add('energize')
-//   }
-//   // setTimeout(function ()
-//   //   let lightening = document.querySelector('')
-//   //   snowflake.remove();
-//   // }, 1000)
-// }
-//  body.addEventListener('click', energizeObama);
-
-
+// got information about changing progress bar value from w3schools https://www.w3schools.com/jsref/prop_progress_value.asp
 body.addEventListener('click', energizeObama);
 
 function energizeObama (event) {
   if (event.target.classList[0] === 'snowflake') {
   event.target.classList.add('energize')
 
+  document.querySelector('progress').value += 10;
+
  setTimeout(function() {
     let bolt = document.querySelector('.energize')
-  bolt.remove();
+  bolt.remove(); checkForWinner();
   }, 1000)
   }
 }
 
 energizeObama();
-// snowflake.addEventListener('click',function() {
-//   alert('energize!')
-//   // snowflake.classList.add('energize')
-//   // console.log('energize')
+//accidentially pushed to my personal github so need to figure that out tomorrow https://github.com/smcurrey528/come-back-barack
+//create a function so that if user clicks on the red hat then they lose the game
+//NOT WORKING YET
+body.addEventListener('click', exhaustObama)
+function exhaustObama (event) {
+  if (event.target.classList[0] === 'hat') {
+    alert("You clicked on the MAGA hat and exhausted Obama. He had to go back to his safe space, so YOU LOSE")
+  }
+}
+exhaustObama();
 
-  // setTimeout(function (){
-  //   snowflake.remove();
-  //   //check for winner here
-  // },1000 );
-
-
+//create function to check for winner
+function checkForWinner () {
+  if (document.querySelector('progress').value === 100) {
+    alert('You energized Obama...Yes, we can! Yes, we can! Great job, you win!')
+  }
+}
+//function to reset game
+//https://www.w3schools.com/jsref/met_loc_reload.asp
+function restart () {
+  document.location.reload();
+}
+restart();
 
  };
+
+

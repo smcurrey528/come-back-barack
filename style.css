@@ -100,6 +100,22 @@ background-image: url(images/energize.png);
 border-radius: 40px;
 }
 
+.energy {
+  background-color: lightsteelblue;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 2px solid;
+  height: 30px;
+}
+
+button {
+  font-family: 'Poppins' , sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 30px;
+  margin-top: 5px;
+}
 
 
 
