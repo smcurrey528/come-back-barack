@@ -30,7 +30,7 @@ body.appendChild(snowflake);
 return snowflake
 
  }
-makeLiberalSnowflake();
+// makeLiberalSnowflake();
 
 //create a function to move the snowflake so they are falling down the page using CSS styles.
 //Using math.random() * window.innerHeight
@@ -48,7 +48,7 @@ function stupidRedHat () {
   body.appendChild(hat);
   return hat
 }
-stupidRedHat();
+// stupidRedHat();
 
 //create a function to move the hat so they are falling down the page using CSS styles.
 //Using math.random() * window.innerHeight
@@ -63,9 +63,14 @@ function flyingElements () {
   setInterval(function() {
   moveHat();
   moveSnowflake();
-}, 1000)
+}, 500)
 }
 flyingElements();
 
+//creating a lot of red hats and snowflakes in the screen with for loop function
+for (i=0; i < 10; i++) {
+  makeLiberalSnowflake();
+  stupidRedHat();
  };
+}
 
