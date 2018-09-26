@@ -9,11 +9,12 @@ body, html {
   overflow: hidden;
   animation: move 20s linear infinite;
 
+
 }
 /*background animation to change the position*/
 @keyframes move {
   0% {
-    background-position:1200px
+    background-position:1400px
      }
   100% {
     background-position:0
@@ -24,34 +25,25 @@ body, html {
 audio {
   position: absolute;
   bottom: 0;
+
 }
 
-/*.hat {
-  height: 170px;
-  width: 170px;
-  border-radius: 50px;
-  background-image: url('https://www.drieddecor.com/images/large/products/ginormous-tumbleweed_LRG.jpg');
-  background-size: cover;
-  background-position: left;
-  animation: roll .99s ease-in-out infinite alternate;
-  position: absolute;
-  bottom: 250px;*/
 
   .obama {
   position: absolute;
-  background-image: url(images/obama-sprite2.png);
-  width: 140px;
-  height: 170px;
+  background-image: url(images/movingObama.gif);
+  width: 120px;
+  height: 130px;
  /* transition: top 2s, left 2s;
   transition-timing-function: linear;*/
- /* background-repeat: no-repeat;*/
-  background-position: -240px 170px;
-  bottom: 3%;
+  /*background-repeat: no-repeat;*/
+/*  background-position: -240px 170px;*/
+  bottom: 6%;
   left: 40%;
 }
 
 .obama.left {
-   background-position: -300px 160px;
+   background-position: 100px 160px;
 
 }
 

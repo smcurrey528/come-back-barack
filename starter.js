@@ -26,9 +26,10 @@ createObama();
 // NOT WORKING YET
 function goLeft () {
   setInterval(function() {
-    let obama = document.createElement('div');
+  //   let obama = document.createElement('div');
     obama.classList.toggle("left");
   }, 300)
+  console.log('obama go left!');
 }
 goLeft();
 
@@ -45,10 +46,10 @@ makeLiberalSnowflake();
 //create a function to move the snowflake so they are falling down the page using CSS styles.
 //Using math.random() * window.innerHeight
 //NOT WORKING YET
-function moveSnowflake (snowflake) {
+function moveSnowflake () {
  snowflake = document.createElement('div');
-  snowflake.style.top = (Math.random() * innerHeight) +'px'
-  snowflake.style.left = (Math.random() * innerWidth) + 'px'
+  snowflake.style.top = Math.random() * innerHeight +'px';
+  snowflake.style.left = Math.random() * innerWidth + 'px';
 }
 moveSnowflake();
 
@@ -65,10 +66,12 @@ stupidRedHat();
 //create a function to move the hat so they are falling down the page using CSS styles.
 //Using math.random() * window.innerHeight
 function moveHat () {
-  hat.style.top = (Math.random() * innerHeight) + 'px'
-  hat.style.left =(Math.random() * innerWidth) + 'px'
+  hat.style.top = (Math.random() * innerHeight) + 'px';
+  hat.style.left =(Math.random() * innerWidth) + 'px';
 }
 moveHat();
+
+//function to move the hat and snowflake elements every second
 
  };
 
