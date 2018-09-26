@@ -7,7 +7,17 @@ body, html {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  animation: move 20s linear infinite;
 
+}
+/*background animation to change the position*/
+@keyframes move {
+  0% {
+    background-position:1200px
+     }
+  100% {
+    background-position:0
+  }
 }
 
 /*CSS to move audio to the bottom left section of page*/
@@ -36,12 +46,33 @@ audio {
   transition-timing-function: linear;*/
  /* background-repeat: no-repeat;*/
   background-position: -240px 170px;
-  bottom: 18px;
-  left: 400px;
+  bottom: 3%;
+  left: 40%;
 }
 
 .obama.left {
+   background-position: -300px 160px;
 
 }
+
+.snowflake {
+  position: absolute;
+  background-image: url(images/snowflake.png);
+  width: 140px;
+  height: 170px;
+  background-repeat: no-repeat;
+
+}
+
+.hat {
+   position: absolute;
+  background-image: url(images/hat.png);
+  width: 140px;
+  height: 170px;
+  background-repeat: no-repeat;
+  right: 50%;
+}
+
+
 
 
