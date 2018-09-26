@@ -47,6 +47,7 @@ p {
 .header, .play {
    /*font-family: 'Luckiest Guy', cursive;*/
    font-family: 'Poppins', sans-serif;
+
 }
 h1 {
   text-align: center;
@@ -68,14 +69,15 @@ a {
 
 }
 .background {
- /* background: url(https://i.imgsafe.org/72/72dd61f655.png);*/
-   background: url(https://s3.envato.com/files/170596024/City_Background_Ny_4267x2133.jpg);
+  background: url(https://s3.envato.com/files/170596024/City_Background_Ny_4267x2133.jpg);
   background-size: cover;
   height: 700px;
   border: 5px solid;
   animation: move 20s linear infinite;
   background-color: black;
 }
+
+
 .nav-wrapper {
  color: #170058;
 }
@@ -83,6 +85,12 @@ a {
   display: flex;
   justify-content: flex-end;
 
+}
+
+#dancer {
+ /* position: absolute;
+ left: 550px;
+ padding-top: 30px;*/
 }
 
 footer {
