@@ -34,11 +34,11 @@ makeLiberalSnowflake();
 // //create a function to move the snowflake so they are falling down the page using CSS styles.
 // //Using math.random() * window.innerHeight
 
-function moveSnowflake () {
+function moveSnowflake (snowflake) {
   snowflake.style.top = Math.random() * innerHeight +'px';
-  // snowflake.style.left = Math.random() * innerWidth + 'px';
+  snowflake.style.left = Math.random() * innerWidth + 'px';
 }
-moveSnowflake();
+moveSnowflake(snowflake);
 
 // //create new element for the MAGA hat that will also fall from Sky and Obama needs to avoid
 // //assign hat to the class of hat
@@ -60,9 +60,10 @@ moveHat();
 // //function to move the hat and snowflake elements every second
 function flyingElements () {
   setInterval(function() {
-  moveHat();
-  moveSnowflake();
+  moveHat(hat);
+  moveSnowflake(snowflake);
 }, 800)
+  return snowflake;
 }
 flyingElements();
 
@@ -74,15 +75,15 @@ for (let i=0; i < 5; i++) {
  }
  };
 
- // create an event listener function that will remove the snowflake once it has been clicked
- body.addEventListener('click', caughtSnowflake)
+ // // create an event listener function that will remove the snowflake once it has been clicked
+ // body.addEventListener('click', caughtSnowflake)
 
- function caughtSnowflake (event) {
-  if (event.target.classList[0] === 'snowflake') {
-    event.target.classList.add('energize')
-  }
- }
- caughtSnowflake();
+ // function caughtSnowflake (event) {
+ //  if (event.target.classList[0] === 'snowflake') {
+ //    event.target.classList.add('energize')
+ //  }
+ // }
+ // caughtSnowflake();
 
 // window.onload = function () {
 //   const body = document.body;
