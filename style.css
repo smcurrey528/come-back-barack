@@ -54,8 +54,19 @@ audio {
   width: 140px;
   height: 170px;
   background-repeat: no-repeat;
+  animation: moveSnowflake 5s linear infinite;
 
 }
+/*background animation to change the position*/
+@keyframes moveSnowflake {
+  0% {
+    top:10%
+     }
+  100% {
+    top: 70%
+  }
+}
+
 
 .hat {
    position: absolute;
@@ -64,6 +75,22 @@ audio {
   height: 170px;
   background-repeat: no-repeat;
   right: 50%;
+  animation: moveHat 5s linear infinite;
+}
+
+@keyframes moveHat {
+  0% {
+    top: 5%;
+  }
+  20% {
+    top: 10%;
+  } 50% {
+    top: 40%;
+  } 75% {
+    top: 60%;
+  } 100% {
+    top: 70%;
+  }
 }
 
 .snowflake.energize {

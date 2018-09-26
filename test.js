@@ -35,7 +35,7 @@ createObama();
  }
   moveSnowflake(snowflake);
   setInterval(function() {
-    moveSnowflake(snowflake) } , 1000);
+    moveSnowflake(snowflake) } , 5000);
 
   return snowflake;
 }
