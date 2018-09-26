@@ -25,6 +25,7 @@ body, html {
 audio {
   position: absolute;
   bottom: 0;
+  right: 0;
 
 }
 
@@ -63,6 +64,11 @@ audio {
   height: 170px;
   background-repeat: no-repeat;
   right: 50%;
+}
+
+.snowflake.energize {
+background-position: center;
+background-image: url(images/energize.png);
 }
 
 
