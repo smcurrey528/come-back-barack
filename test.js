@@ -58,8 +58,31 @@ createObama();
       moveHat(hat) }, 1000);
     return hat;
     }
-    for (i=0; i < 5; i++) {
+    for (i=0; i < 7; i++) {
       stupidRedHat();
     }
-  };
 
+
+  //everything is working above, yasss queen
+
+  //function to create an event listener when player clicks the snowflake
+function energizeObama (event) {
+  if (event.target.classList[0] === 'snowflake') {
+    event.target.classList.add('energize')
+  }
+}
+ body.addEventListener('click', energizeObama);
+
+// snowflake.addEventListener('click',function() {
+//   alert('energize!')
+//   // snowflake.classList.add('energize')
+//   // console.log('energize')
+
+  // setTimeout(function (){
+  //   snowflake.remove();
+  //   //check for winner here
+  // },1000 );
+
+
+
+ };
