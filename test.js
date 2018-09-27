@@ -99,6 +99,7 @@ exhaustObama();
 function checkForWinner () {
   if (document.querySelector('progress').value === 100) {
     alert('You energized Obama...Yes, we can! Yes, we can! Great job, you win!')
+  // body.style.background = url('https://i.imgur.com/2EALkFa.gifv')
   }
 }
 //function to reset game
