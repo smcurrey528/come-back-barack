@@ -76,10 +76,10 @@ audio {
   height: 170px;
   background-repeat: no-repeat;
   right: 50%;
-  animation: moveHat 5s linear infinite;
+ /* animation: moveHat 5s linear infinite;*/
 }
 
-@keyframes moveHat {
+/*@keyframes moveHat {
   0% {
     top: 5%;
   }
@@ -92,7 +92,7 @@ audio {
   } 100% {
     top: 70%;
   }
-}
+}*/
 
 .snowflake.energize {
 background-position: center;

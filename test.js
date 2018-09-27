@@ -104,11 +104,46 @@ function checkForWinner () {
 }
 //function to reset game
 //https://www.w3schools.com/jsref/met_loc_reload.asp
+//not working yet
 function restart () {
   document.location.reload();
 }
 restart();
 
  };
+//collision detection formula. Cynthia gave me this to reference https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
+ let obama = {x: 5, y: 5, width: 50, height: 50}
+
+ let hat = {x: 20, y:10, width: 10, height: 10}
+
+if (obama.x < hat.x + hat.width &&
+  obama.x + obama.width > hat.x &&
+  obama.y < hat.y + hat.height &&
+  obama.y + obama.height > hat.y) {
+  alert('collision detected')
+}
+//taking values from up top
+if (5 < 30 &&
+  55 > 20 &&
+  5<20 &&
+  55> 10) {
+  //collision detected
+}
+
+//game v1
+//get obama to move
+//put 1 hat on the ground
+//detect if obama hit the hat (progress bar points)
+//use css transition over one hat
+//random generate hats
+//random detection
+t
+
+//game v2
+//get obama to move
+//have 1 hat fall from sky directly
+//get detection
+//update score
+//put detection on multiple hats
 
 
